@@ -1,0 +1,255 @@
+.alug_img:before {
+  background-image: url("../images/bg2.jpg");    
+  background-position: center center;
+  background-repeat: no-repeat;  
+  background-size: cover;
+  content: "";
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; 
+}
+
+.fundo_cinza{
+  color: black;
+  background-color: #eff0f1 ;  
+  font-size: 10px;
+  width: 100%;
+  padding: 7px 7px 7px 7px;
+  border-radius: 6px;
+  margin-left:5px;
+  height: 30px;
+  margin-right:5px;
+}
+
+.fundo_verde_alug{
+  color:#28a745;
+  font-weight: 800 !important;  
+  font-size: 20px;
+}
+
+.verde_alug{
+  color:white;
+  background-color:#28a745; 
+  padding: 7px 7px 7px 7px;
+  border-radius: 8px;
+  width: fit-content;
+  font-weight: 800 !important;  
+  font-size: 25px;
+}
+
+.rosa_alug{
+  color:#ff9cbb;
+}
+
+.div_rosa{
+  background-color: #f079ab;
+  padding: 5px 5px 5px 5px;
+  border-radius: 15px;
+  color: white;
+  font-size: 12px;
+  width: fit-content;
+  text-align: center;
+}
+
+.branco_alug{
+  color:#ffffff;
+}
+
+.azul_alug{
+  color:#00343d;
+}
+
+.icon_fa_alug{
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.p_alug{
+  text-align: justify;
+}
+
+.blog .carousel-indicators {
+  left: 0;
+  top: auto;
+  bottom: -60px;
+
+}
+
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+    background: #ffffff;
+    border-radius: 50%;
+    width: 28px;
+    height: 8px;
+}
+
+.blog .carousel-indicators .active {
+    background: #18262c;
+}
+
+.form-elegant .font-small {
+font-size: 0.8rem; 
+}
+
+.form-elegant .z-depth-1a {
+-webkit-box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25); 
+}
+
+.form-elegant .z-depth-1-half,
+.form-elegant .btn:hover {
+-webkit-box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
+box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15); 
+}
+
+
+/* teste */
+ul.bs-autocomplete-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow: auto;
+  z-index: 9999;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.4);
+}
+
+ul.bs-autocomplete-menu a {
+  font-weight: normal;
+  color: #333333;
+}
+
+.ui-helper-hidden-accessible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.ui-state-active,
+.ui-state-focus {
+  color: #23527c;
+  background-color: #eeeeee;
+}
+
+.bs-autocomplete-feedback {
+  width: 1.5em;
+  height: 1.5em;
+  overflow: hidden;
+  margin-top: .5em;
+  margin-right: .5em;
+}
+
+.loader {
+  font-size: 10px;
+  text-indent: -9999em;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background: #333;
+  background: -moz-linear-gradient(left, #333333 10%, rgba(255, 255, 255, 0) 42%);
+  background: -webkit-linear-gradient(left, #333333 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(left, #333333 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(left, #333333 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, #333333 10%, rgba(255, 255, 255, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.loader:before {
+  width: 50%;
+  height: 50%;
+  background: #333;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+
+.loader:after {
+  background: #fff;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.autocomplete-suggestions { 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box; 
+  border: 1px solid #999; 
+  background: #FFF; 
+  cursor: default; 
+  overflow: auto; 
+  -webkit-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); 
+  -moz-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); 
+  box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); 
+}
+
+.autocomplete-suggestion { 
+  padding: 2px 5px; 
+  white-space: nowrap; 
+  overflow: hidden; 
+}
+.autocomplete-no-suggestion { 
+  padding: 2px 5px;
+
+.autocomplete-selected 
+{ background: #F0F0F0; 
+}
+.autocomplete-suggestions strong { 
+  font-weight: bold; color: #000; 
+}
+.autocomplete-group { 
+  padding: 2px 5px; 
+  font-weight: bold; 
+  font-size: 16px; 
+  color: #000; 
+  display: block; 
+  border-bottom: 1px solid #000; 
+}
