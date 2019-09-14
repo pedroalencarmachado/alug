@@ -44,7 +44,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light" id="pb-navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html"><img class="img_alug" src="assets/images/logotipo.png" style="width:120px"></a>
+        <a class="navbar-brand" href="index.php"><img class="img_alug" src="assets/images/logotipo.png" style="width:120px"></a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#probootstrap-navbar" aria-controls="probootstrap-navbar" aria-expanded="false" aria-label="Toggle navigation">
           <span><i class="ion-navicon"></i></span>
         </button>
@@ -52,10 +52,11 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link" href="#section-home">Início</a></li>
             <li class="nav-item"><a class="nav-link" href="#section-features">Conheça mais</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://medium.com/alug-escreve" target="_blank">Blog</a></li>
             <li class="nav-item"><a class="nav-link" href="#section-reviews">Produtos</a></li>
-            <!--<li class="nav-item"><a class="nav-link" href="#section-planos">Planos</a></li> -->
+            <li class="nav-item"><a class="nav-link" href="#section-planos">Planos</a></li>
+            <li class="nav-item"><a class="nav-link" href="area-assinante/index.php">Área do assinante</a></li>      
             <li class="nav-item"><a class="nav-link" href="#section-pricing">Contato</a></li>         
+            <li class="nav-item"><a class="nav-link" href="https://medium.com/alug-escreve" target="_blank">Blog</a></li>
           </ul>
         </div>
       </div>
@@ -251,28 +252,28 @@
             <div class="modal-body">
               <div class="row">
                 <div class="col-sm-6">
-                <div id="container" class="cf">   
-                  <div id="main" role="main">
-                    <section class="slider">
-                      <div class="flexslider">
-                        <ul class="slides">
-                          <li data-thumb-img-class="img_prod1">
-                            <img class="img_prod1" />
-                          </li>
-                          <li data-thumb-img-class="img_prod2">
-                            <img class="img_prod2" />
-                          </li>
-                          <li data-thumb-img-class="img_prod3">
-                            <img class="img_prod3" />
-                          </li>
-                          <li data-thumb-img-class="img_prod4">
-                            <img class="img_prod4" />
-                          </li>
-                        </ul>
-                      </div>
-                    </section> 
-                  </div>
-                </div>
+                  <div id="container" class="cf">   
+                    <div id="main" role="main">
+                      <section class="slider">
+                        <div class="flexslider">
+                          <ul class="slides">
+                            <li data-thumb-img-class="img_prod1">
+                              <img class="img_prod1" />
+                            </li>
+                            <li data-thumb-img-class="img_prod2">
+                              <img class="img_prod2" />
+                            </li>
+                            <li data-thumb-img-class="img_prod3">
+                              <img class="img_prod3" />
+                            </li>
+                            <li data-thumb-img-class="img_prod4">
+                              <img class="img_prod4" />
+                            </li>
+                          </ul>
+                        </div>
+                      </section> 
+                    </div>
+                 </div>
                 </div>
                 <div class="col-md-6">
                   <p id="conteudo_prod">
@@ -350,22 +351,24 @@
                             <li data-target="#blogCarousel" data-slide-to="4">
                             </li>
                              <li data-target="#blogCarousel" data-slide-to="5">
-                            </li>                            
+                            </li>   
+                            <li data-target="#blogCarousel" data-slide-to="6">
+                            </li>                          
                         </ol>
                         <!-- Carousel items -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="row">
                                     <div class="col-md-3" style="margin-bottom:10px;">
-                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="XBox One" data-img1="videogame1.jpg" data-img2="videogame2.jpg" data-img3="videogame3.jpg" data-img4="videogame4.jpg" data-itens="console xbox one 500GB, 1 controle sem fio, fonte e cabo de alimentação, cabo HDMI, 53 jogos."  data-conteudo="Esse dispensa comentário né? Além do console da microsoft, você já leva um controle e mais de 50 jogos, entre eles: FIFA, Mortal Kombat, UFC, Forza." data-preco="45.90">
+                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Drone DJI Phantom 3 SE" data-img1="drone1.jpg" data-img2="drone2.jpg" data-img3="drone3.jpg" data-img4="drone4.jpg" data-itens="Drone DJI Phantom 3 SE, controle remoto, 1 bateria, carregadores e acessórios." data-conteudo="Agora você pode ter um drone sem precisar comprar um. Aluga, e paga somente pelo período que usar. O Phantom 3 SE tira fotos em 12mp, Filmes em 4k a 30fps, alcance de até 4km e autonomia de até 25 min." data-preco="129.90">
+                                             <img src="assets/images/produtos/drone1.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>   
+                                    <div class="col-md-3" style="margin-bottom:10px;">
+                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="XBox One" data-img1="videogame1.jpg" data-img2="videogame2.jpg" data-img3="videogame3.jpg" data-img4="videogame4.jpg" data-itens="console xbox one 500GB, 1 controle sem fio, fonte e cabo de alimentação, cabo HDMI, 53 jogos e fone de ouvido."  data-conteudo="Esse dispensa comentário né? Além do console da microsoft, você já leva um controle e mais de 50 jogos, entre eles: FIFA, Mortal Kombat, UFC, Forza." data-preco="45.90">
                                             <img src="assets/images/produtos/videogame1.jpg" alt="Image" style="max-width:100%;">
                                         </a>
-                                    </div>
-                                    <div class="col-md-3" style="margin-bottom:10px;">
-                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Videokê VSK" data-img1="videoke1.jpg" data-img2="videoke2.jpg" data-img3="videoke3.jpg" data-img4="videoke4.jpg" data-itens="aparelho videokê com 340 músicas, fonte de alimentação, cabo p2/RCA, cabo HDMI, catálogo de músicas." data-conteudo="Tem um talento escondido dentro de você e precisa com urgência exibi-lo para seus amigos? Que tal um videokê com mais de 300 músicas? Conecte ele na sua TV e a festa é certa" data-preco="34.90">
-                                             <img src="assets/images/produtos/videoke1.jpg" alt="Image" style="max-width:100%;">
-                                        </a>
-                                    </div>
+                                    </div>                                   
                                     <div class="col-md-3" style="margin-bottom:10px;">
                                         <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Projetor Multimídia Epson Powerlite S10" data-img1="projetor1.jpg" data-img2="projetor2.jpg" data-img3="projetor3.jpg" data-img4="projetor4.jpg" data-itens="projetor epson s10, bolsa para transporte, cabo de energia, cabo vga, adaptador hdmi, tela de projeção 1,80 x 1,70 e suporte para tela de projeção."  data-conteudo="Não tem como pensar em uma apresentação sem um desses né? Já viu o preço de um novo? Pois bem. Agora você pode pagar um precinho gente boa que corresponde só pelo tempo que usou." data-preco="47.90">
                                              <img src="assets/images/produtos/projetor1.jpg" alt="Image" style="max-width:100%;">
@@ -393,11 +396,11 @@
                                              <img src="assets/images/produtos/baba_eletronica1.jpg" alt="Image" style="max-width:100%;"> 
                                         </a>
                                     </div>
-                                    <div class="col-md-3" style="margin-bottom:10px;">
-                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Tela de Encosto 9' Motor One" data-img1="tela_encosto1.jpg" data-img2="tela_encosto2.jpg" data-img3="tela_encosto3.jpg" data-img4="tela_encosto4.jpg" data-itens="1 tela de encosto 9' com leitor de DVD/CD/USB e SD, acessórios e plugues de instalação, fonte para tomada veicular, controle para videogame, controle remoto,  " data-conteudo="Vai levar a criançada em uma viagem longa? Já sabe que elas vão se entediar né? Que tal levar uma tela encosto de 9'?" data-preco="25.90">
-                                             <img src="assets/images/produtos/tela_encosto1.jpg" alt="Image" style="max-width:100%;">
+                                     <div class="col-md-3" style="margin-bottom:10px;">
+                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Videokê VSK" data-img1="videoke1.jpg" data-img2="videoke2.jpg" data-img3="videoke3.jpg" data-img4="videoke4.jpg" data-itens="aparelho videokê com 340 músicas, 1 microfone, fonte de alimentação, cabo p2/RCA, cabo HDMI, catálogo de músicas." data-conteudo="Tem um talento escondido dentro de você e precisa com urgência exibi-lo para seus amigos? Que tal um videokê com mais de 300 músicas? Conecte ele na sua TV e a festa é certa" data-preco="34.90">
+                                             <img src="assets/images/produtos/videoke1.jpg" alt="Image" style="max-width:100%;">
                                         </a>
-                                    </div>
+                                    </div>                                    
                                     <div class="col-md-3" style="margin-bottom:10px;">
                                         <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Caixa de som Mondial CM11 400W RMS" data-img1="caixa_som1.jpg" data-img2="caixa_som2.jpg" data-img3="caixa_som3.jpg" data-img4="caixa_som4.jpg" data-itens="caixa amplificadora mondial CM-11, cabo de energia, cabo para bateria externa, cabo RCA/P2, controle remoto, manual de instruções." data-conteudo="Quer dar um volume na sua festinha? Que tal essa caixa de som com conexão bluetooth, conexão para microfones, conexão usb, entre outras? Ainda por cima, são 400W RMS, já pensou?" data-preco="23.90">
                                             <img src="assets/images/produtos/caixa_som1.jpg" alt="Image" style="max-width:100%;">
@@ -503,11 +506,27 @@
                                         <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="HD Externo Samsung 1TB" data-img1="hd1.jpg" data-img2="hd2.jpg" data-img3="hd3.jpg" data-img4="hd4.jpg" data-itens="hd Samsung 1TB, cabo usb." data-conteudo="Vai formatar o PC e está sem espaço para o backup? Leva o HD, faz o backup e paga só pelo tempo que usou, quer vantagem maior?" data-preco="19.90">
                                              <img src="assets/images/produtos/hd1.jpg" alt="Image" style="max-width:100%;">
                                         </a>
+                                    </div>  
+                                    <div class="col-md-3" style="margin-bottom:10px;">
+                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Tela de Projeção + Tripé" data-img1="tela_projecao1.jpg" data-img2="tela_projecao2.jpg" data-img3="tela_projecao3.jpg" data-img4="tela_projecao4.jpg" data-itens="Tripé 3m, Tela de 1,80m x 1,70m, Bolsa para transporte do tripé." data-conteudo="Está precisando projetar mas não tem um lugar preparado? Agora não precisa mais se preocupar com isso. Com essa tela de projeção você monta onde quiser." data-preco="14.90">
+                                             <img src="assets/images/produtos/tela_projecao1.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
                                     </div>                              
                                 </div>
                                 <!--.row-->
                             </div>
-                            <!--.item-->            
+                            <!--.item-->  
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3" style="margin-bottom:10px;">
+                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Tela de Encosto 9' Motor One" data-img1="tela_encosto1.jpg" data-img2="tela_encosto2.jpg" data-img3="tela_encosto3.jpg" data-img4="tela_encosto4.jpg" data-itens="1 tela de encosto 9' com leitor de DVD/CD/USB e SD, acessórios e plugues de instalação, fonte para tomada veicular, controle para videogame, controle remoto,  " data-conteudo="Vai levar a criançada em uma viagem longa? Já sabe que elas vão se entediar né? Que tal levar uma tela encosto de 9'?" data-preco="25.90">
+                                             <img src="assets/images/produtos/tela_encosto1.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>                                                                     
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->           
 
                         </div>
                         <!--.carousel-inner-->
@@ -816,7 +835,7 @@
     </section>
     <!-- END section -->
 
-    <!--
+    
     <section class="pb_section bg-light pb_slant-white pb_pb-100" id="section-planos">
       <div class="container">
         <div class="row justify-content-center mb-5">
@@ -853,9 +872,9 @@
           </div>
         </div>
       </div>
-    </section> -->
-    
-    <!-- ENDs ection -->
+    </section> 
+
+    <!-- END section -->
 
     <section class="pb_section bg-light pb_slant-white" id="section-pricing">      
         

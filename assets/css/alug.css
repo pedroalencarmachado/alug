@@ -71,6 +71,12 @@
   text-align: justify;
 }
 
+.span_alug{
+  font-size: 16pt;
+  font-weight: 700;
+  color:#00343d;
+}
+
 .blog .carousel-indicators {
   left: 0;
   top: auto;

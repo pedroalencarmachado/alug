@@ -28,37 +28,66 @@
     <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />
 
 
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    
 
 	</head>
 	<body>      
-      
-     <div id="container" class="cf">   
-       <div id="main" role="main">
-          <section class="slider">
-            <div class="flexslider">
-              <ul class="slides">
-                <li data-thumb="assets/images/produtos/rocadeira.jpg">
-                  <img src="assets/images/produtos/rocadeira.jpg" />
-                </li>
-                <li data-thumb="assets/images/produtos/rocadeira.jpg">
-                  <img src="assets/images/produtos/rocadeira.jpg" />
-                </li>
-                <li data-thumb="assets/images/produtos/rocadeira.jpg">
-                  <img src="assets/images/produtos/rocadeira.jpg" />
-                </li>
-                <li data-thumb="assets/images/produtos/rocadeira.jpg">
-                  <img src="assets/images/produtos/rocadeira.jpg" />
-                </li>
-              </ul>
-            </div>
-          </section>     
-      </div>
-    </div>
-    <script src="assets/js/bootstrap.min.js"></script>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<!------ Include the above in your HEAD tag ---------->
+     
+   <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-5 relative align-self-center" style='top:30px;'>
+
+            <ul class="nav nav-tabs" id="myTab" role="tablist" style="border-bottom:none">
+              <li class="nav-item">
+                <a class="nav-link active" id="assinante-tab" data-toggle="tab" href="#assinante" role="tab" aria-selectedcontrols="assinante" aria-selected="true">Assinante</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="influenciador-tab" data-toggle="tab" href="#influenciador" role="tab" aria-selectedontrols="profile" aria-selected="false">Influenciador</a>
+              </li>            
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+
+              <div class="tab-pane fade show active" id="assinante" role="tabpanel" aria-labelledby="assinante-tab">
+                <form action="efetuar-login.php" method="POST" enctype="multipart/form-data" class="bg-white pb_form_v1">
+                  <h2 class="mb-4 mt-0 text-center">Área do assinante</h2>
+                  <div class="md-form pb-3">                
+                    <input type="email" placeholder="Informe seu email" required class="form-control pb_height-50" name="email" id="email" />
+                    <br/>                
+                    <input type="password" placeholder="Informe seu CPF" required class="form-control pb_height-50" name="cpf" id="cpf" />
+                    <br/>
+                  </div>            
+                  <div class="form-group">
+                    <input type="submit" class="btn btn-primary btn-lg btn-block pb_btn-pill  btn-shadow-blue" value="Entrar">
+                  </div>              
+                </form>
+              </div>
+
+              <div class="tab-pane fade" id="influenciador" role="tabpanel" aria-labelledby="influenciador-tab">
+                <form action="efetuar-login.php" method="POST" enctype="multipart/form-data" class="bg-white pb_form_v1">
+                  <h2 class="mb-4 mt-0 text-center">Área do Influenciador</h2>
+                  <div class="md-form pb-3">                                              
+                    <input type="password" placeholder="Informe seu CPF" required class="form-control pb_height-50" name="cpf" id="cpf" />
+                    <br/>
+                  </div>            
+                  <div class="form-group">
+                    <input type="submit" class="btn btn-primary btn-lg btn-block pb_btn-pill  btn-shadow-blue" value="Entrar">
+                  </div>              
+                </form>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
 
     <script src="assets/js/jquery.flexslider.js"></script>
     <script type="text/javascript">     
