@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<title>Alug - Porque seus sonhos valem muito mais do que o dinheiro pode comprar</title>
+		<meta name="description" content="Tenha tudo sem precisar comprar nada. Somos uma proposta de coscientização. Por que comprar, se você pode alugar?">
+		
+    <meta name="keywords" content="alug, alugbr, aluguel, alugue, produtos, aluguel em dois vizinhos, dois vizinhos, videogame, projetor, xbox, ps4, gopro, camera, fujifilm, instax, bicicleta, bike, oggi, aluguel de bike, moutain bike, videoke, tela de encosto, baba eletronica, baba, caixa de som, jbl, microfone, joystick, controle, lapela, kindle, tripe, apresentador, slides, chromecast, ferramentas, bosh, furadeira, parafusadeira, brocas, chaves, philips, wap, extratora, home cleaner, lavadora de alta pressao, transbike, airfryer, fritadeira, eletrica, violao, grow, perfil, imagem e acao, inalador, caixa termica, cadeirinha infantil">
+
+    <meta name="author" content="Alug">
+
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400" rel="stylesheet">
+
+		<link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/law-icons/font/flaticon.css">
+
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+
+    <link rel="stylesheet" href="assets/css/helpers.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/alug.css">
+    <link rel="stylesheet" href="assets/css/landing-2.css">
+
+    <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />
+	</head>
+	<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+
+    <nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light" id="pb-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.php"><img class="img_alug" src="assets/images/logotipo.png" style="width:120px"></a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#probootstrap-navbar" aria-controls="probootstrap-navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="ion-navicon"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="probootstrap-navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.php#section-home">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.php#section-features">Conheça mais</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.php#section-reviews">Produtos</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.php#section-planos">Planos</a></li> 
+            <li class="nav-item"><a class="nav-link" href="area-assinante/index.php">Área do assinante</a></li>      
+            <li class="nav-item"><a class="nav-link" href="index.php#section-pricing">Contato</a></li>         
+            <li class="nav-item"><a class="nav-link" href="https://medium.com/alug-escreve" target="_blank">Blog</a></li>                  
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+
+    <script type="text/javascript">
+
+      $('#myTab a').on('click', function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
+
+    </script>
+
+    <section class="pb_cover_v3 overflow-hidden cover-bg-indigo cover-bg-opacity text-left alug_img" id="section-home">
+      
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-5 relative align-self-center" style='top:30px;'>
+
+            <ul class="nav nav-tabs" id="myTab" role="tablist" style="border-bottom:none">
+              <li class="nav-item">
+                <a class="nav-link active" id="assinante-tab" data-toggle="tab" href="#assinante" role="tab" aria-selectedcontrols="assinante" aria-selected="true">Assinante</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="influenciador-tab" data-toggle="tab" href="#influenciador" role="tab" aria-selectedontrols="profile" aria-selected="false">Influenciador</a>
+              </li>            
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+
+              <div class="tab-pane fade show active" id="assinante" role="tabpanel" aria-labelledby="assinante-tab">
+                <form action="efetuar-login.php" method="POST" enctype="multipart/form-data" class="bg-white pb_form_v1">
+                  <h2 class="mb-4 mt-0 text-center">Assinante</h2>
+                  <div class="md-form pb-3">                
+                    <input type="email" placeholder="Informe seu email" required class="form-control pb_height-50" name="email" id="email" />
+                    <br/>                
+                    <input type="password" placeholder="Informe seu CPF" required class="form-control pb_height-50" name="cpf" id="cpf" />
+                    <br/>
+                  </div>            
+                  <div class="form-group">
+                    <input type="submit" class="btn btn-primary btn-lg btn-block pb_btn-pill  btn-shadow-blue" value="Entrar">
+                  </div>              
+                </form>
+              </div>
+
+              <div class="tab-pane fade" id="influenciador" role="tabpanel" aria-labelledby="influenciador-tab">
+                <form action="efetuar-login-influenciador.php" method="POST" enctype="multipart/form-data" class="bg-white pb_form_v1">
+                  <h2 class="mb-4 mt-0 text-center">Influenciador</h2>
+                  <div class="md-form pb-3">     
+                    <input type="email" placeholder="Informe seu email" required class="form-control pb_height-50" name="email" id="email" />
+                    <br/>                                          
+                    <input type="password" placeholder="Informe seu CPF" required class="form-control pb_height-50" name="cpf" id="cpf" />
+                    <br/>
+                  </div>            
+                  <div class="form-group">
+                    <input type="submit" class="btn btn-primary btn-lg btn-block pb_btn-pill  btn-shadow-blue" value="Entrar">
+                  </div>              
+                </form>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- END section -->
+
+    <footer class="pb_footer bg-light" role="contentinfo">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="https://fb.com/alugbr" class="p-2"><i class="fa fa-facebook"></i></a></li>
+              <li class="list-inline-item"><a href="https://instagram.com/alugbr" class="p-2"><i class="fa fa-instagram"></i></a></li>
+              <li class="list-inline-item"><a href="https://api.whatsapp.com/send?phone=5546999303401" class="p-2"><i class="fa fa-whatsapp"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <p class="pb_font-14">&copy; 2019. All Rights Reserved.</p>
+            <p class="pb_font-14">Feito com amor <i class="fa fa-heart"></i></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- loader -->
+    <div id="pb_loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#1d82ff"/></svg></div>
+
+    <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/flexslides.jquery.min.js"></script>
+
+
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
+
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+     <script src="assets/js/main.js"></script>
+
+    <script type="text/javascript" src="assets/js/jquery.autocomplete.js"></script>
+    <script type="text/javascript" src="assets/js/countries.js"></script>
+    <script type="text/javascript" src="assets/js/demo.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.mockjax.js"></script>
+    <script src="assets/js/jquery.mask.js"></script>
+
+
+	</body>
+</html>
