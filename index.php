@@ -17,7 +17,7 @@
 		<title>Alug - Porque seus sonhos valem muito mais do que o dinheiro pode comprar</title>
 		<meta name="description" content="Tenha tudo sem precisar comprar nada. Somos uma proposta de coscientização. Por que comprar, se você pode alugar?">
 		
-    <meta name="keywords" content="alug, alugbr, aluguel, alugue, produtos, aluguel em dois vizinhos, dois vizinhos, videogame, projetor, xbox, ps4, gopro, camera, fujifilm, instax, bicicleta, bike, oggi, aluguel de bike, moutain bike, videoke, tela de encosto, baba eletronica, baba, caixa de som, jbl, microfone, joystick, controle, lapela, kindle, tripe, apresentador, slides, chromecast, ferramentas, bosh, furadeira, parafusadeira, brocas, chaves, philips, wap, extratora, home cleaner, lavadora de alta pressao, transbike, airfryer, fritadeira, eletrica, violao, grow, perfil, imagem e acao, inalador, caixa termica, cadeirinha infantil">
+    <meta name="keywords" content="alug, alugbr, aluguel, alugue, produtos, aluguel em dois vizinhos, dois vizinhos, videogame, projetor, xbox, ps4, gopro, camera, fujifilm, instax, bicicleta, bike, oggi, aluguel de bike, moutain bike, videoke, tela de encosto, baba eletronica, baba, caixa de som, jbl, microfone, joystick, controle, auricular, lapela, kindle, tripe, apresentador, slides, chromecast, ferramentas, bosh, furadeira, parafusadeira, brocas, chaves, philips, wap, extratora, home cleaner, lavadora de alta pressao, transbike, airfryer, fritadeira, eletrica, violao, grow, perfil, imagem e acao, inalador, caixa termica, cadeirinha infantil">
 
     <meta name="author" content="Alug">
 
@@ -39,6 +39,9 @@
     <link rel="stylesheet" href="assets/css/landing-2.css">
 
     <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 	</head>
 	<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
 
@@ -54,7 +57,7 @@
             <li class="nav-item"><a class="nav-link" href="#section-features">Conheça mais</a></li>
             <li class="nav-item"><a class="nav-link" href="#section-reviews">Produtos</a></li>
             <li class="nav-item"><a class="nav-link" href="#section-planos">Planos</a></li>
-            <li class="nav-item"><a class="nav-link" href="area-assinante/index.php">Área do assinante</a></li>      
+            <li class="nav-item"><a class="nav-link" href="login.html">Acesso restrito</a></li>      
             <li class="nav-item"><a class="nav-link" href="#section-pricing">Contato</a></li>         
             <li class="nav-item"><a class="nav-link" href="https://medium.com/alug-escreve" target="_blank">Blog</a></li>
           </ul>
@@ -87,31 +90,33 @@
                 <input type="text" placeholder="O que você quer alugar?" required class="form-control pb_height-50" name="country" id="autocomplete-ajax" />
                 <br/>
                 <input type="hidden"  name="country" id="selction-ajax" disabled="disabled"/> 
-                <div class="form-row">
-                  
-                  <div class="col-6" style="text-align:left">
-                   
+                <div class="form-row">                  
+                  <div class="col-6" style="text-align:left">                   
                       <label for="dtini-pesquisa">Alugar De</label>                    
-                      <input type="date" placeholder="Alugar de" required class="form-control pb_height-50" name="dtini-pesquisa" id="dtini-pesquisa" />
-                       
-                    
+                      <input type="date" placeholder="Alugar de" required class="form-control pb_height-50" name="dtini-pesquisa" id="dtini-pesquisa" />                                           
                   </div>
-
-                  <div class="col-6" style="text-align:left">
-                    
+                  <div class="col-6" style="text-align:left">                    
                       <label for="dtfim-pesquisa" >Até</label>                   
-                      <input type="date" placeholder="Alugar de" required class="form-control pb_height-50" name="dtfim-pesquisa" id="dtfim-pesquisa" />                     
-                   
-                  </div>
-
-                
+                      <input type="date" placeholder="Alugar de" required class="form-control pb_height-50" name="dtfim-pesquisa" id="dtfim-pesquisa" />                                        
+                  </div>              
                 </div>
+
+                <br/>   
+                <!--<div class="form-row">  
+                  <div class="col-9" style="text-align:left; flex:0 0 80%; max-width:80%;">                                  
+                    <input type="text" placeholder="Você possui um Cupom?" class="form-control pb_height-50" name="cupom" id="cupom" />                
+                  </div>
+                  <div class="col-2" style="text-align:center;flex:0 0 20%; max-width:20%; margin:auto;">
+                    <a href="#" data-toggle="modal" data-target="#modal_info_cupom">
+                      <i class="fa fa-question-circle-o azul_alug icon_fa_alug_sd" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>-->
               </div>            
 
               <div class="form-group">
                 <input type="submit" class="btn btn-primary btn-lg btn-block pb_btn-pill  btn-shadow-blue" value="Quero alugar">
               </div>              
-
             </form>
 
           </div>
@@ -119,6 +124,36 @@
       </div>
     </section>
     <!-- END section -->
+      <!--
+      <div class="modal fade bd-example-modal-md" id="modal_info_cupom" tabindex="-1"  aria-labelledby="modal_label" aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+          <div class="modal-content"> 
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal_label"></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>                     
+            <div class="modal-body">
+              <div class="row">
+                <div class="container">   
+                  <p>
+                    Um <strong>Cupom é que um código recebido por algum influenciador do Alug</strong>. Esse código lhe dará uma série de benefícios
+                    em seus aluguéis: Deconto em diárias, adesivos, bonés e diárias grátis são alguns dos brindes.
+                  </p> 
+                  <p>
+                    Se você não conhece nenhum influenciador, ou se você quer se tornar um, <strong>entre em contato com a gente.</strong>                 
+                  </p>
+                </div>              
+              </div>            
+            </div>
+            <div class="modal-footer">
+              <p class="mb-0"><a href="https://api.whatsapp.com/send?phone=5546999303401&text=Quero ser um INFLUENCIADOR ALUG" target="_blank" role="button" class="btn btn-primary">Quero ser um Influenciador</a></p>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>                             
+            </div>
+          </div>
+        </div>
+      </div>-->
 
     <section class="pb_section bg-light pb_slant-white pb_pb-250" id="section-features">
       <div class="container">
@@ -241,7 +276,7 @@
     <!-- END section -->
 
       <div class="modal fade bd-example-modal-lg" id="modal_prod" tabindex="-1"  aria-labelledby="modal_label" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog modal-lg" role="document" style="margin:0.5rem auto">
           <div class="modal-content"> 
             <div class="modal-header">
               <h5 class="modal-title" id="modal_label"></h5>
@@ -250,7 +285,7 @@
               </button>
             </div>                     
             <div class="modal-body">
-              <div class="row">
+              <div class="row" id="modal-conteudo-prod1">
                 <div class="col-sm-6">
                   <div id="container" class="cf">   
                     <div id="main" role="main">
@@ -295,30 +330,89 @@
                         <input type="date" class="form-control pb_height-50" required placeholder="Alugar até" name="dtfim" id="dtfim" />             
                       </div>
                     </div>    
+
+
                     <div class="form-row" id="div_produto_obs" style="margin-top:5px; display: none;">
                       <div class="fundo_cinza">
                         <h3 id="produto_obs" style="font-size:12px">Quanto mais dias, mais desconto #ficaadica</h3>
                       </div>
                     </div>                     
                     <div class="row" style="margin-top:10px">
-                        <div class="col-sm">
+                        <div class="col-6">
                           <h3 id="produto_diaria" class="fundo_verde_alug"></h3>
                         </div>
-                        <div class="col-sm">
+                        <div class="col-6">
                            <h3 id="produto_desconto_diaria" class="div_rosa"></h3>
                         </div>
                      </div>
                     <h3 id="produto_total" class="verde_alug"></h3>                
                 </div>
               </div>
+
+              <div class="container" id="modal-conteudo-prod2" style="display:none;" >                                
+                <div class="row">
+                    <div class="card mb-3">
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                          <div class="card-body">
+                            <i class="fa fa-address-card-o card-img" style="text-align:center; font-size:5em;" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title" id="modal-conteudo-nome-prod"></h5>
+                            <p class="card-text" id="modal-conteudo-itens-prod"></p>                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                          <div class="card-body">
+                            <i class="fa fa-calendar-o card-img" style="text-align:center; font-size:5em;" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title" id="modal-conteudo-periodo-prod"></h5>
+                            <p class="card-text">Seu aluguel inicia a partir da hora que receber o produto. Poderá usá-lo até o dia de término, no mesmo horário que recebeu.</p>                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                          <div class="card-body">
+                            <i class="fa fa-tags card-img" style="text-align:center; font-size:5em;" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Insira seu Cupom</h5>                            
+                            <div class="form-group">
+                              <input type="text" name="nome" class="form-control py-3 reverse" name="cupom_prod" id="cupom_prod" placeholder="Informe o código do cupom">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                </div>
+              </div>
+
             <input type="hidden" id="mensagem">
+            <input type="hidden" id="nomeproduto">
             <input type="hidden" id="preco_produto">
             </div>
             <div class="modal-footer">
+              <!--
+              <input class="pb_height-40 form-control col-md-4" placeholder="Tem Cupom?" name="cupom_prod" id="cupom_prod" type="text"/>
+              <a href="#section-reviews" title="O que é?" data-placement="top" data-toggle="popover" data-content="Um influenciador Alug possui cupons que podem ser trocados por descontos ou brindes. Não conhece nenhum ou quer se tornar um? Faça <a href='https://api.whatsapp.com/send?phone=5546999303401&text=Quero ser um INFLUENCIADOR ALUG' target='_blank'> contato com a gente.</a>">
+                <i class="fa fa-question-circle-o icon_fa_alug_lsd azul_alug" aria-hidden="true"></i>
+              </a><br/>-->
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-              <button type="submit" id="enviarbtn" class="btn btn-success">Tenho interesse</button>
-
-               </form>
+              <button type="button" id="btnvoltar" style="display:none;" class="btn btn-primary">Voltar</button>
+              <button type="submit" id="btntenhointeresse" style="display:none;" class="btn btn-success">Confirmar</button>              
+              <button type="button" id="btnavancar" class="btn btn-primary">Próximo</button>
+            </form>
 
             </div>
           </div>
@@ -360,7 +454,7 @@
                             <div class="carousel-item active">
                                 <div class="row">
                                     <div class="col-md-3" style="margin-bottom:10px;">
-                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Drone DJI Phantom 3 SE" data-img1="drone1.jpg" data-img2="drone2.jpg" data-img3="drone3.jpg" data-img4="drone4.jpg" data-itens="Drone DJI Phantom 3 SE, controle remoto, 1 bateria, carregadores e acessórios." data-conteudo="Agora você pode ter um drone sem precisar comprar um. Aluga, e paga somente pelo período que usar. O Phantom 3 SE tira fotos em 12mp, Filmes em 4k a 30fps, alcance de até 4km e autonomia de até 25 min." data-preco="129.90">
+                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Drone DJI Phantom 3 SE" data-img1="drone1.jpg" data-img2="drone2.jpg" data-img3="drone3.jpg" data-img4="drone4.jpg" data-itens="Drone DJI Phantom 3 SE, mochila de transporte, controle remoto, 1 bateria, carregadores e acessórios." data-conteudo="Agora você pode ter um drone sem precisar comprar um. Aluga, e paga somente pelo período que usar. O Phantom 3 SE tira fotos em 12mp, Filmes em 4k a 30fps, alcance de até 4km e autonomia de até 25 min." data-preco="141.90">
                                              <img src="assets/images/produtos/drone1.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>   
@@ -368,12 +462,12 @@
                                         <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="XBox One" data-img1="videogame1.jpg" data-img2="videogame2.jpg" data-img3="videogame3.jpg" data-img4="videogame4.jpg" data-itens="console xbox one 500GB, 1 controle sem fio, fonte e cabo de alimentação, cabo HDMI, 53 jogos e fone de ouvido."  data-conteudo="Esse dispensa comentário né? Além do console da microsoft, você já leva um controle e mais de 50 jogos, entre eles: FIFA, Mortal Kombat, UFC, Forza." data-preco="45.90">
                                             <img src="assets/images/produtos/videogame1.jpg" alt="Image" style="max-width:100%;">
                                         </a>
-                                    </div>                                   
+                                    </div>   
                                     <div class="col-md-3" style="margin-bottom:10px;">
-                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Projetor Multimídia Epson Powerlite S10" data-img1="projetor1.jpg" data-img2="projetor2.jpg" data-img3="projetor3.jpg" data-img4="projetor4.jpg" data-itens="projetor epson s10, bolsa para transporte, cabo de energia, cabo vga, adaptador hdmi, tela de projeção 1,80 x 1,70 e suporte para tela de projeção."  data-conteudo="Não tem como pensar em uma apresentação sem um desses né? Já viu o preço de um novo? Pois bem. Agora você pode pagar um precinho gente boa que corresponde só pelo tempo que usou." data-preco="47.90">
-                                             <img src="assets/images/produtos/projetor1.jpg" alt="Image" style="max-width:100%;">
+                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Playstation 4" data-img1="play41.jpg" data-img2="play42.jpg" data-img3="play43.jpg" data-img4="play44.jpg" data-itens="console playstation 4, 1 controle sem fio, cabo HDMI, cabo de alimentação, 5 jogos: PES2018, Mortal Kombat X, Drive Club, F12017 e Fifa 14"  data-conteudo="Para quem não se contentou com o console da Microsoft, não se preocupe. Aqui no Alug você tem outra opção." data-preco="45.90">
+                                             <img src="assets/images/produtos/play41.jpg" alt="Image" style="max-width:100%;">
                                         </a>
-                                    </div>
+                                    </div>                                                                    
                                     <div class="col-md-3" style="margin-bottom:10px;">
                                         <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Câmera Canon EOS Rebel T6" data-img1="camera_fotografica1.jpg" data-img2="camera_fotografica2.jpg" data-img3="camera_fotografica3.jpg" data-img4="camera_fotografica4.jpg" data-itens="câmera Canon EOS T6, objetiva 18-55mm, moldura de visor, 1 bateria, carregador, bolsa de transporte, cartão SD 32GB, cabo USB." data-conteudo="Que tal então essa Câmera profissional da Canon EOS Rebel T6. Aposto que aquele ensaio fotográfico tem tudo pra ser um sucesso agora, não é mesmo?" data-preco="56.90">
                                              <img src="assets/images/produtos/camera_fotografica1.jpg" alt="Image" style="max-width:100%;">
@@ -390,7 +484,7 @@
                                         <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="GoPro Hero 7 Black" data-img1="gopro1.jpg" data-img2="gopro2.jpg" data-img3="gopro3.jpg" data-img4="gopro4.jpg" data-itens="câmera GoPro Hero 7 black, cabo usb, adatador para tomada, case de transporte, case de estanque, bastão retrátil, bastão flutuante, tripé flexível, suporte para vidro, suporte para pulso, suporte para peito, suporte para cabeça, maleta de transporte." data-conteudo="Esse espaço é pequeno demais para tamanhas possibilidades de se fazer com uma câmera dessas. Além da camera, você leva mais 10 acessórios." data-preco="55.90">
                                              <img src="assets/images/produtos/gopro1.jpg" alt="Image" style="max-width:100%;">
                                         </a>
-                                    </div>
+                                    </div>                                    
                                     <div class="col-md-3" style="margin-bottom:10px;">
                                         <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Babá Eletrônica Motorola MBP-482" data-img1="baba_eletronica1.jpg" data-img2="baba_eletronica2.jpg" data-img3="baba_eletronica3.jpg" data-img4="baba_eletronica4.jpg" data-itens="monitor, câmera, bateria recarregável, adaptador para o monitor, adaptador para câmera, manual de instruções." data-conteudo="Tá precisando se acostumar com a ideia do seu neném no próprio quarto? Que tal uma vigiadinha pra ter certeza que está tudo bem por lá?" data-preco="23.90">
                                              <img src="assets/images/produtos/baba_eletronica1.jpg" alt="Image" style="max-width:100%;"> 
@@ -400,12 +494,12 @@
                                         <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Videokê VSK" data-img1="videoke1.jpg" data-img2="videoke2.jpg" data-img3="videoke3.jpg" data-img4="videoke4.jpg" data-itens="aparelho videokê com 340 músicas, 1 microfone, fonte de alimentação, cabo p2/RCA, cabo HDMI, catálogo de músicas." data-conteudo="Tem um talento escondido dentro de você e precisa com urgência exibi-lo para seus amigos? Que tal um videokê com mais de 300 músicas? Conecte ele na sua TV e a festa é certa" data-preco="34.90">
                                              <img src="assets/images/produtos/videoke1.jpg" alt="Image" style="max-width:100%;">
                                         </a>
-                                    </div>                                    
+                                    </div>   
                                     <div class="col-md-3" style="margin-bottom:10px;">
-                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Caixa de som Mondial CM11 400W RMS" data-img1="caixa_som1.jpg" data-img2="caixa_som2.jpg" data-img3="caixa_som3.jpg" data-img4="caixa_som4.jpg" data-itens="caixa amplificadora mondial CM-11, cabo de energia, cabo para bateria externa, cabo RCA/P2, controle remoto, manual de instruções." data-conteudo="Quer dar um volume na sua festinha? Que tal essa caixa de som com conexão bluetooth, conexão para microfones, conexão usb, entre outras? Ainda por cima, são 400W RMS, já pensou?" data-preco="23.90">
-                                            <img src="assets/images/produtos/caixa_som1.jpg" alt="Image" style="max-width:100%;">
+                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Projetor Multimídia Epson Powerlite S10" data-img1="projetor1.jpg" data-img2="projetor2.jpg" data-img3="projetor3.jpg" data-img4="projetor4.jpg" data-itens="projetor epson s10, bolsa para transporte, cabo de energia, cabo vga, adaptador hdmi, tela de projeção 1,80 x 1,70 e suporte para tela de projeção."  data-conteudo="Não tem como pensar em uma apresentação sem um desses né? Já viu o preço de um novo? Pois bem. Agora você pode pagar um precinho gente boa que corresponde só pelo tempo que usou." data-preco="47.90">
+                                             <img src="assets/images/produtos/projetor1.jpg" alt="Image" style="max-width:100%;">
                                         </a>
-                                    </div>
+                                    </div>                                                                    
                                 </div>
                                 <!--.row-->
                             </div>
@@ -419,10 +513,10 @@
                                         </a>
                                     </div>
                                     <div class="col-md-3" style="margin-bottom:10px;">
-                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Carregador portátil Powerbank 20.000mAh" data-img1="carregador_portatil1.jpg" data-img2="carregador_portatil2.jpg" data-img3="carregador_portatil3.jpg" data-img4="carregador_portatil4.jpg" data-itens="carregador portátil pineng 20.000mAh, cabo usb."  data-conteudo="Vai para uma viagem e sabe que vai ficar sem bateria? Pra que sofrer com isso? Aqui você leva esse carregador portátil que te dá de 6 a 10 cargas completas no seu celular." data-preco="14.90">
-                                             <img src="assets/images/produtos/carregador_portatil1.jpg" alt="Image" style="max-width:100%;">
+                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Caixa de som Mondial CM11 400W RMS" data-img1="caixa_som1.jpg" data-img2="caixa_som2.jpg" data-img3="caixa_som3.jpg" data-img4="caixa_som4.jpg" data-itens="caixa amplificadora mondial CM-11, cabo de energia, cabo para bateria externa, cabo RCA/P2, controle remoto, manual de instruções." data-conteudo="Quer dar um volume na sua festinha? Que tal essa caixa de som com conexão bluetooth, conexão para microfones, conexão usb, entre outras? Ainda por cima, são 400W RMS, já pensou?" data-preco="23.90">
+                                            <img src="assets/images/produtos/caixa_som1.jpg" alt="Image" style="max-width:100%;">
                                         </a>
-                                    </div>
+                                    </div>                                    
                                     <div class="col-md-3" style="margin-bottom:10px;">
                                         <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Fujifilm Instax Mini 8" data-img1="polaroid1.jpg" data-img2="polaroid2.jpg" data-img3="polaroid3.jpg" data-img4="polaroid4.jpg" data-itens="câmera Fujifilm Instax Mini 8, 2 pilhas AA, 10 fotos instax mini." data-conteudo="Depois das câmeras digitais, diga aí, quantas vezes você imprimiu uma foto? Essa câmera instantânea nos remete aos velhos e bons tempos." data-preco="38.90">
                                              <img src="assets/images/produtos/polaroid1.jpg" alt="Image" style="max-width:100%;">
@@ -446,15 +540,15 @@
                                         </a>
                                     </div>
                                     <div class="col-md-3" style="margin-bottom:10px;">
-                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Microfone de Lapela AMW BV58" data-img1="microfone_lapela1.jpg" data-img2="microfone_lapela2.jpg" data-img3="microfone_lapela3.jpg" data-img4="microfone_lapela4.jpg" data-itens="2 microfones auriculares, 2 bases de transmissão, 1 base receptora, 4 pilhas AA, cabo p10, cabo de energia. " data-conteudo="Quer microfone mais discreto que esses? Acredite, eles não deixam nada a desejar quanto ao volume e potência." data-preco="27.90">
+                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Microfone auricular AMW BV58" data-img1="microfone_lapela1.jpg" data-img2="microfone_lapela2.jpg" data-img3="microfone_lapela3.jpg" data-img4="microfone_lapela4.jpg" data-itens="2 microfones auriculares, 2 bases de transmissão, 1 base receptora, 4 pilhas AA, cabo p10, cabo de energia. " data-conteudo="Quer microfone mais discreto que esses? Acredite, eles não deixam nada a desejar quanto ao volume e potência." data-preco="27.90">
                                              <img src="assets/images/produtos/microfone_lapela1.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
                                     <div class="col-md-3" style="margin-bottom:10px;">
-                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Estabilizador de câmera Steadycam" data-img1="estabilizador1.jpg" data-img2="estabilizador2.jpg" data-img3="estabilizador3.jpg" data-img4="estabilizador4.jpg" data-itens="estabilizador de câmera, 3 contrapesos, manopla, adaptador para celular e câmera."  data-conteudo="Quer gravar um vídeo sem deixar a impressão que estava descendo escada enquanto gravava? Que tal esse estabilizador manual de câmera?" data-preco="18.90">
-                                             <img src="assets/images/produtos/estabilizador1.jpg" alt="Image" style="max-width:100%;">
+                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Carregador portátil Powerbank 20.000mAh" data-img1="carregador_portatil1.jpg" data-img2="carregador_portatil2.jpg" data-img3="carregador_portatil3.jpg" data-img4="carregador_portatil4.jpg" data-itens="carregador portátil pineng 20.000mAh, cabo usb."  data-conteudo="Vai para uma viagem e sabe que vai ficar sem bateria? Pra que sofrer com isso? Aqui você leva esse carregador portátil que te dá de 6 a 10 cargas completas no seu celular." data-preco="14.90">
+                                             <img src="assets/images/produtos/carregador_portatil1.jpg" alt="Image" style="max-width:100%;">
                                         </a>
-                                    </div>
+                                    </div>                                    
                                     <div class="col-md-3" style="margin-bottom:10px;">
                                         <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Controle PS4" data-img1="controle_ps4_1.jpg" data-img2="controle_ps4_2.jpg" data-img3="controle_ps4_3.jpg" data-img4="controle_ps4_4.jpg" data-itens="controle sem fio para PS4." data-conteudo="Jogar um game é legal né? Acompanhado de um amigo, pode ficar ainda mais divertido. Não se preocupe em comprar um controle novo para usar em um final de semana. Aqui você aluga um novinho e paga só pelo tempo que usar" data-preco="17.90">
                                              <img src="assets/images/produtos/controle_ps4_1.jpg" alt="Image" style="max-width:100%;">
@@ -521,6 +615,16 @@
                                     <div class="col-md-3" style="margin-bottom:10px;">
                                         <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Tela de Encosto 9' Motor One" data-img1="tela_encosto1.jpg" data-img2="tela_encosto2.jpg" data-img3="tela_encosto3.jpg" data-img4="tela_encosto4.jpg" data-itens="1 tela de encosto 9' com leitor de DVD/CD/USB e SD, acessórios e plugues de instalação, fonte para tomada veicular, controle para videogame, controle remoto,  " data-conteudo="Vai levar a criançada em uma viagem longa? Já sabe que elas vão se entediar né? Que tal levar uma tela encosto de 9'?" data-preco="25.90">
                                              <img src="assets/images/produtos/tela_encosto1.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div> 
+                                    <div class="col-md-3" style="margin-bottom:10px;">
+                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Estabilizador de câmera Steadycam" data-img1="estabilizador1.jpg" data-img2="estabilizador2.jpg" data-img3="estabilizador3.jpg" data-img4="estabilizador4.jpg" data-itens="estabilizador de câmera, 3 contrapesos, manopla, adaptador para celular e câmera."  data-conteudo="Quer gravar um vídeo sem deixar a impressão que estava descendo escada enquanto gravava? Que tal esse estabilizador manual de câmera?" data-preco="18.90">
+                                             <img src="assets/images/produtos/estabilizador1.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div> 
+                                    <div class="col-md-3" style="margin-bottom:10px;">
+                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Bateria para Drone Phantom 3" data-img1="bateriadrone1.jpg" data-img2="bateriadrone2.jpg" data-img3="bateriadrone3.jpg" data-img4="bateriadrone4.jpg" data-itens="Bateria para Drone DJI Phantom 3: Standard, SE, Advanced, Professional e 4K"  data-conteudo="Está precisando voar com mais autonomia? Que tal uma bateria extra para seu Drone Phantom 3? Tá na mão." data-preco="49.90">
+                                             <img src="assets/images/produtos/bateriadrone1.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>                                                                     
                                 </div>
@@ -999,7 +1103,8 @@
     <div id="pb_loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#1d82ff"/></svg></div>
 
     <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/flexslides.jquery.min.js"></script>
+    <script src="assets/js/flexslides.jquery.min.js"></script>
+    <script src="assets/js/moment.js"></script>
 
 
     <script src="assets/js/popper.min.js"></script>
@@ -1020,7 +1125,8 @@
 
     <script type="text/javascript">
       $('#modal_prod').on('show.bs.modal', function (event) {
-        //$(window).trigger('resize');
+        //$(window).trigger('resize');      
+
         var button = $(event.relatedTarget); // Botão que acionou o modal
         
         var nome = button.data('nome');        
@@ -1036,6 +1142,7 @@
         //modal.find('.modal-body input').val(recipient)
         //modal.find('.modal-title').text('Nova mensagem para ' + recipient)
         $('#mensagem').text('Tenho interesse no produto '+nome);
+        $('#nomeproduto').text(nome);
         $('#preco_produto').text(preco);        
 
         $('#produto_diaria').html("R$: "+ preco + "/dia");
@@ -1047,6 +1154,9 @@
 
         calcula_preco_diaria();
         montar_carrosel_imagem(button);
+        montar_modal2(nome,conteudo_itens_inclusos);
+
+
                           
         //console.log('13');
 
@@ -1057,14 +1167,89 @@
 
       })
 
-      /*$( "#enviarbtn" ).click(function() {
-        var dtini = $('#dtini').val();
+      $( "#btnvoltar" ).click(function() {
+        //alert('entrou');
+        //$('#modal-conteudo-prod')
+        $('.modal-title').text("Revise e confirme seu Alug");
+        $("#modal-conteudo-prod1").show('1000');
+        $("#modal-conteudo-prod2").hide('1000');
+
+        $("#btnvoltar").hide();
+        $("#btnavancar").show();
+        $("#btntenhointeresse").hide();
+
+        var nomeproduto = $('#nomeproduto').text();
+        $('.modal-title').text(nomeproduto);
+        //$('#modal-conteudo-prod').show("hide", { direction: "left" }, 1000);
+        /*var dtini = $('#dtini').val();
         var dtfim = $('#dtfim').val();
         var mensagem = $('#mensagem').text() + " Para o período: " +dtini + " a " +dtfim;
         //alert(mensagem);
         window.open('https://api.whatsapp.com/send?phone=5546999303401&text='+mensagem,'_blank');
         //location.href= "https://api.whatsapp.com/send?phone=5546999303401&text="+mensagem;
-      });*/
+        */
+      });
+
+      $( "#btnavancar" ).click(function() {
+        //alert('entrou');
+        //$('#modal-conteudo-prod')   
+
+        var dtini = $('#dtini').val();
+        var dtfim = $('#dtfim').val();
+
+        dtini = dtini.replace(/^\s+|\s+$/g,"");   
+        dtfim = dtfim.replace(/^\s+|\s+$/g,"");   
+
+        if(!dtini || !dtfim){                    
+          $('#dtini').css('borderColor','red');
+          $('#dtfim').css('borderColor','red');       
+          return false;
+        }else{
+          $('#dtini').css('borderColor','#ced4da');       
+          $('#dtfim').css('borderColor','#ced4da');           
+        }
+
+        $("#modal-conteudo-prod1").hide('1000');
+        $("#modal-conteudo-prod2").show('1000');
+
+        $("#btnvoltar").show();
+        $("#btnavancar").hide();
+        $("#btntenhointeresse").show();
+
+        var dtini = $('#dtini').val();
+        var dtfim = $('#dtfim').val();
+
+        var dtiniformatada = moment(dtini);
+        dtiniformatada = dtiniformatada.format("DD/MM");
+
+        var dtfimformatada = moment(dtfim);
+        dtfimformatada = dtfimformatada.format("DD/MM");
+
+       /* var formattedDate = new Date(dtini);
+        var d = formattedDate.getDate();
+        d+=1;
+        var m =  formattedDate.getMonth();
+        m += 1;  // JavaScript months are 0-11
+        var y = formattedDate.getFullYear();
+
+        alert(d);*/
+      
+        //$("#txtDate").val(d + "." + m + "." + y);
+
+
+        $('#modal-conteudo-periodo-prod').text(dtiniformatada + " a " +dtfimformatada);
+
+        $('.modal-title').text("Revise e confirme seu Alug");
+
+        //$('#modal-conteudo-prod').show("hide", { direction: "left" }, 1000);
+        /*var dtini = $('#dtini').val();
+        var dtfim = $('#dtfim').val();
+        var mensagem = $('#mensagem').text() + " Para o período: " +dtini + " a " +dtfim;
+        //alert(mensagem);
+        window.open('https://api.whatsapp.com/send?phone=5546999303401&text='+mensagem,'_blank');
+        //location.href= "https://api.whatsapp.com/send?phone=5546999303401&text="+mensagem;
+        */
+      });
 
       $('.carousel').carousel({
         pause: true,
@@ -1075,6 +1260,11 @@
         $('.flexslider').data('flexslider').resize();        
         $('.flexslider').data('flexslider').init();
       };  
+
+      function montar_modal2(nomeprod, itensprod){
+        $('#modal-conteudo-nome-prod').text(nomeprod);
+        $('#modal-conteudo-itens-prod').text("Nesse aluguel está incluso: "+itensprod);               
+      };
 
       function montar_carrosel_imagem(button) {
         var imagem1 = button.data('img1'); 
@@ -1093,9 +1283,25 @@
 
     <script type="text/javascript">
       function confirma_interesse_produto(){
+        //Acionado de dentro da modal de produto
         var dtini = $('#dtini').val();
         var dtfim = $('#dtfim').val();
-        var mensagem = $('#mensagem').text() + " Para o período: " +dtini + " a " +dtfim;
+
+        var dtiniformatada = moment(dtini);
+        dtiniformatada = dtiniformatada.format("DD/MM");
+
+        var dtfimformatada = moment(dtfim);
+        dtfimformatada = dtfimformatada.format("DD/MM");
+
+        var cupom = $('#cupom_prod').val();
+        cupom = cupom.replace(/^\s+|\s+$/g,"");   
+
+        var mensagem = $('#mensagem').text() + " Para o período: " +dtiniformatada + " a " +dtfimformatada;
+
+        if(cupom){
+          mensagem = mensagem + ". Recebi o cupom: "+cupom;
+        }else{          
+        }        
         //alert(mensagem);
         window.open('https://api.whatsapp.com/send?phone=5546999303401&text='+mensagem,'_blank');
       }
@@ -1103,13 +1309,20 @@
     </script>
    
     <script type="text/javascript">
-      function confirma_interesse(){
+      function confirma_interesse(){        
+        //Invocado da opçõa de aluguel no início do site
           var produto = $('#autocomplete-ajax').val();
           var periodo_ini = $('#dtini-pesquisa').val();
           var periodo_fim = $('#dtfim-pesquisa').val();
-          
-          var mensagem = "Tenho interesse no " + produto + " para o período: " + periodo_ini+ " a " + periodo_fim;
 
+          var dtiniformatada = moment(periodo_ini);
+          dtiniformatada = dtiniformatada.format("DD/MM");
+
+          var dtfimformatada = moment(periodo_fim);
+          dtfimformatada = dtfimformatada.format("DD/MM");
+                    
+          var mensagem = "Tenho interesse no " + produto + " para o período: " + dtiniformatada+ " a " + dtfimformatada;          
+          
           window.open('https://api.whatsapp.com/send?phone=5546999303401&text='+mensagem,'_blank');
 
       }
@@ -1213,6 +1426,15 @@
           }
         });
       });
+    </script>
+
+
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();   
+      });
+
+      $("[data-toggle=popover]").popover({html:true});
     </script>
 
 

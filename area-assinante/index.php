@@ -11,23 +11,28 @@
         }
         $logado = $_SESSION['login'];
 
+        /*
         $host = "localhost:8080"; 
         $username = "root"; 
         $password = ""; 
         $db = "alug"; 
-
-        /*
+        */
+        
         $host = "localhost:3306"; 
         $username = "alugapp_root"; 
         $password = "eclenice123@"; 
         $db = "alugapp_alug";
-        */
+        
         
         $idcliente = $_SESSION['idcliente'];        
 
         $link = mysql_connect($host,$username,$password) or die("Impossível conectar ao banco."); 
 
         @mysql_select_db($db, $link) or die("Impossível conectar ao banco"); 
+        mysql_query("SET NAMES 'utf8'");
+        mysql_query('SET character_set_connection=utf8');
+        mysql_query('SET character_set_client=utf8');
+        mysql_query('SET character_set_results=utf8');
 
         $result_cliente=mysql_query("SELECT * FROM cliente where idcliente = '$idcliente'") or die("Impossível executar a query1"); 
 
@@ -138,9 +143,14 @@
             <li class="nav-item"><a class="nav-link" href="../index.php#section-features">Conheça mais</a></li>
             <li class="nav-item"><a class="nav-link" href="../index.php#section-reviews">Produtos</a></li>
             <li class="nav-item"><a class="nav-link" href="../index.php#section-planos">Planos</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.php">Área do assinante</a></li>      
+            <li class="nav-item"><a class="nav-link" href="../login.html">Acesso restrito</a></li>      
             <li class="nav-item"><a class="nav-link" href="../index.php#section-pricing">Contato</a></li>         
             <li class="nav-item"><a class="nav-link" href="https://medium.com/alug-escreve" target="_blank">Blog</a></li>
+            <?php
+              if((isset ($_SESSION['login']) == true) and (isset ($_SESSION['senha']) == true)){
+                echo '<li class="nav-item"><a class="nav-link" href="encerra_sessao.php">Sair</a></li>';
+              }
+            ?>
           </ul>
         </div>
       </div>

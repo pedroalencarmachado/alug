@@ -23,7 +23,7 @@
     "023": "Lavadora de alta pressão WAP Ágil 1800",
     "024": "M\xe1quina Fotográfica Canon EOS Rebel T6",
     "025": "Microfone sem fio VWS-20",
-    "026": "Microfone de lapela AMW BV58",
+    "026": "Microfone auricular AMW BV58",
     "027": "Parafusadeira Bosh GSR1000",
     "028": "Polaroid - Fujifilm Instax Mini 8",
     "029": "Projetor Epso S10 + Tela de Projeção",
@@ -55,5 +55,7 @@
     "054": "Extratora de Carpete, Sof\a\u0301 e Estofados WAP Home Cleaner",
     "055": "Fogareiro à Gás + Panela",
     "056": "Cabo de Transferência de Energia",
-    "057": "Tela de Projeção 1,80m x 1,70m + Tripé"
+    "057": "Tela de Projeção 1,80m x 1,70m + Tripé",
+    "058": "Videogame Playstation 4 + 1 controle + 5 jogos",
+    "059": "Bateria Drone Phantom 3"
 }
