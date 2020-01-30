@@ -82,8 +82,23 @@
 
 .span_alug{
   font-size: 16pt;
+  font-weight: 900;
+  color:#00343d;
+  font-family: Montserrat;  
+}
+
+.p_step{
+  font-size: 12pt;
+  line-height: 1.5;  
+  color:#00343d;
+  font-family: Montserrat; 
+}
+
+.span_alug_step{
+  font-size: 18pt;
   font-weight: 700;
   color:#00343d;
+  font-family: Montserrat;  
 }
 
 .blog .carousel-indicators {

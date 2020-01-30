@@ -19,7 +19,7 @@
     "019": "JBL Flip 3",
     "020": "Jogo Perfil 6",
     "021": "Kindle Paperwhite 8˚ Geração",
-    "022": "Kit Jardim - (Enchada, pá e luvas)",
+    "022": "Kit Jardim - (Enxada, pá, ancinho, garfo, pulverizadores e tesouras)",
     "023": "Lavadora de alta pressão WAP Ágil 1800",
     "024": "M\xe1quina Fotográfica Canon EOS Rebel T6",
     "025": "Microfone sem fio VWS-20",
@@ -57,5 +57,9 @@
     "056": "Cabo de Transferência de Energia",
     "057": "Tela de Projeção 1,80m x 1,70m + Tripé",
     "058": "Videogame Playstation 4 + 1 controle + 5 jogos",
-    "059": "Bateria Drone Phantom 3"
+    "059": "Bateria Drone Phantom 3",
+    "060": "Tenda Gazebo 3m x 3m",
+    "060": "Jogo Imagem & Ação 2",
+    "061": "Chopeira Residencial Rústica",
+    "062": "Kit de iluminação Softbox"
 }

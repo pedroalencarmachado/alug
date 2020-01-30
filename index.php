@@ -24,8 +24,7 @@
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400" rel="stylesheet">
 
 		<link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
-    <link rel="stylesheet" href="assets/fonts/law-icons/font/flaticon.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">    
 
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
 
@@ -65,9 +64,6 @@
       </div>
     </nav>
     <!-- END nav -->
-
-
-
 
     <section class="pb_cover_v3 overflow-hidden cover-bg-indigo cover-bg-opacity text-left alug_img" id="section-home">
       <div class="container">
@@ -166,17 +162,32 @@
         <div class="row">
           <div class="col-lg-4 col-md- col-sm-6">
             <div class="media d-block pb_feature-v1 text-left">
-              <div>
+              <!--<div>
                   <i class="fa fa-bookmark azul_alug icon_fa_alug" aria-hidden="true"></i>
-              </div>
+              </div>-->
               <div class="media-body">
+                <img src="assets/images/step1.png" style="width:100%">
+              </div>
+              <div class="media-body" style="text-align:center;">
+                  <span class="span_alug_step">Precisa de algo?</span>
+                  <p class="p_step">Algumas coisas são usadas raramente e você <strong>não precisa pagar caro por elas</strong>.</p>
+              </div>
+              <!--<div class="media-body">
                 <h5 class="mt-0 mb-3 heading">Precisa de algo</h5>
                 <p class="text-sans-serif p_alug">Algumas coisas são usadas raramente e você <strong>não precisa pagar caro por elas</strong>. Alugando, além de economizar, você consome de forma responsável e contribui com o meio ambiente.</p>
-              </div>
+              </div>-->
             </div>
           </div>
           <div class="col-lg-4 col-md- col-sm-6">
-            <div class="media d-block pb_feature-v1 text-left">
+            <div class="media d-block pb_feature-v1 text-left" style="text-align:center;">
+              <div class="media-body">
+                <img src="assets/images/step2.png" style="width:100%">
+              </div>
+               <div class="media-body" style="text-align:center;">
+                  <span class="span_alug_step">Entre em contato</span>
+                  <p class="p_step">Entre em contato. Combinaremos os detalhes de como vai funcionar o aluguel.</p>
+              </div>
+              <!--
               <div>
                 <i class="fa fa-paper-plane azul_alug icon_fa_alug" aria-hidden="true"></i>
               </div>
@@ -184,51 +195,82 @@
                 <h5 class="mt-0 mb-3 heading">Entre em contato</h5>
                 <p class="text-sans-serif p_alug"><strong>Encontrou o produto que precisa?</strong> Entre em contato conosco via qualquer meio digital ou telefone. Assim, combinamos os detalhes de como vai funcionar o aluguel.</p>
               </div>
+              -->
             </div>
           </div>
           <div class="col-lg-4 col-md- col-sm-6">
             <div class="media d-block pb_feature-v1 text-left">
+              <div class="media-body">
+                <img src="assets/images/step3.png" style="width:100%">
+              </div>
+              <div class="media-body" style="text-align:center;">
+                  <span class="span_alug_step">Levamos até você</span>
+                  <p class="p_step">Aguarde na comodidade do seu lar. Nós levamos e retiramos onde e quando preferir.</p>
+              </div>
+              <!--
               <div>
                 <i class="fa fa-truck azul_alug icon_fa_alug"></i>
               </div>
               <div class="media-body">
                 <h5 class="mt-0 mb-3 heading">Levamos até você</h5>
                 <p class="text-sans-serif p_alug">Aguarde na comodidade do seu lar. Não se preocupe em retirar ou devolver. <strong>Nós levamos e retiramos</strong> na hora e local de sua preferência.</p>
-              </div>
+              </div> -->
             </div>
+         
           </div>
 
           <div class="col-lg-4 col-md- col-sm-6">
             <div class="media d-block pb_feature-v1 text-left">
-              <div>
+              <div class="media-body">
+                <img src="assets/images/step4.png" style="width:100%">
+              </div>
+              <div class="media-body" style="text-align:center;">
+                  <span class="span_alug_step">Sempre abertos</span>
+                  <p class="p_step">Todos os dias e a qualquer hora. Afinal, as necessidades não têm hora para acontecer.</p>
+              </div>
+              <!--<div>
                 <i class="fa fa-clock-o azul_alug icon_fa_alug" aria-hidden="true"></i>
               </div>
               <div class="media-body">
                 <h5 class="mt-0 mb-3 heading">Estamos sempre abertos</h5>
                 <p class="text-sans-serif p_alug">Atendemos todos os dias e a qualquer hora. Sabemos que as necessidades não têm hora para acontecer, por isso, <strong>estamos sempre online e disponíveis</strong>.</p>
-              </div>
+              </div>-->
             </div>
           </div>
           <div class="col-lg-4 col-md- col-sm-6">
             <div class="media d-block pb_feature-v1 text-left">
-              <div>
+              <div class="media-body">
+                <img src="assets/images/step5.png" style="width:100%">
+              </div>
+              <div class="media-body" style="text-align:center;">
+                  <span class="span_alug_step">Amigos do meio ambiente</span>
+                  <p class="p_step"><strong>Consumir de forma responsável</strong> é uma forma de preservar o meio ambiente e seus recursos.</p>
+              </div>
+              <!--<div>
                 <i class="fa fa-recycle azul_alug icon_fa_alug" aria-hidden="true"></i>
               </div>
               <div class="media-body">
                 <h5 class="mt-0 mb-3 heading">Somos sustentáveis</h5>
                 <p class="text-sans-serif p_alug">Podemos tornar do mundo um lugar melhor. <strong>Consumir de forma responsável</strong> tem um valor imensurável para o meio ambiente e a sociedade.</p>
-              </div>
+              </div>-->
             </div>
           </div>
           <div class="col-lg-4 col-md- col-sm-6">
             <div class="media d-block pb_feature-v1 text-left">
-              <div>
+              <div class="media-body">
+                <img src="assets/images/step6.png" style="width:100%">
+              </div>
+              <div class="media-body" style="text-align:center;">
+                  <span class="span_alug_step">Alug da semana</span>
+                  <p class="p_step">Toda semana, divulgamos novidades. Fique de olho nas nossas <a href="https://instagram.com/alugbr" target="_blank"> redes sociais.</a></p>
+              </div>
+              <!--<div>
                 <i class="fa fa-calendar-o azul_alug icon_fa_alug"></i>
               </div>
               <div class="media-body">
                 <h5 class="mt-0 mb-3 heading">Alug da semana</h5>
                 <p class="text-sans-serif p_alug">No início de toda semana, divulgamos novidades que vão de <strong>novos produtos até desconto em diárias</strong>. Chamamos de Alug da semana. Fique ligado nas nossas redes sociais.</p>
-              </div>
+              </div>-->
             </div>
           </div>
         </div>
@@ -496,7 +538,7 @@
                                         </a>
                                     </div>   
                                     <div class="col-md-3" style="margin-bottom:10px;">
-                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Projetor Multimídia Epson Powerlite S10" data-img1="projetor1.jpg" data-img2="projetor2.jpg" data-img3="projetor3.jpg" data-img4="projetor4.jpg" data-itens="projetor epson s10, bolsa para transporte, cabo de energia, cabo vga, adaptador hdmi, tela de projeção 1,80 x 1,70 e suporte para tela de projeção."  data-conteudo="Não tem como pensar em uma apresentação sem um desses né? Já viu o preço de um novo? Pois bem. Agora você pode pagar um precinho gente boa que corresponde só pelo tempo que usou." data-preco="47.90">
+                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Projetor Multimídia Epson Powerlite S10" data-img1="projetor1.jpg" data-img2="projetor2.jpg" data-img3="projetor3.jpg" data-img4="projetor4.jpg" data-itens="projetor epson s10, bolsa para transporte, cabo de energia, cabo vga, adaptador hdmi e tela de projeção 1,80 x 1,70."  data-conteudo="Não tem como pensar em uma apresentação sem um desses né? Já viu o preço de um novo? Pois bem. Agora você pode pagar um precinho gente boa que corresponde só pelo tempo que usou." data-preco="47.90">
                                              <img src="assets/images/produtos/projetor1.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>                                                                    
@@ -602,7 +644,7 @@
                                         </a>
                                     </div>  
                                     <div class="col-md-3" style="margin-bottom:10px;">
-                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Tela de Projeção + Tripé" data-img1="tela_projecao1.jpg" data-img2="tela_projecao2.jpg" data-img3="tela_projecao3.jpg" data-img4="tela_projecao4.jpg" data-itens="Tripé 3m, Tela de 1,80m x 1,70m, Bolsa para transporte do tripé." data-conteudo="Está precisando projetar mas não tem um lugar preparado? Agora não precisa mais se preocupar com isso. Com essa tela de projeção você monta onde quiser." data-preco="14.90">
+                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Tela de Projeção + Tripé" data-img1="tela_projecao1.jpg" data-img2="tela_projecao2.jpg" data-img3="tela_projecao3.jpg" data-img4="tela_projecao4.jpg" data-itens="tripé 3m, tela de 1,80m x 1,70m, bolsa para transporte do tripé." data-conteudo="Está precisando projetar mas não tem um lugar preparado? Agora não precisa mais se preocupar com isso. Com essa tela de projeção você monta onde quiser." data-preco="29.90">
                                              <img src="assets/images/produtos/tela_projecao1.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>                              
@@ -613,7 +655,7 @@
                             <div class="carousel-item">
                                 <div class="row">
                                     <div class="col-md-3" style="margin-bottom:10px;">
-                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Tela de Encosto 9' Motor One" data-img1="tela_encosto1.jpg" data-img2="tela_encosto2.jpg" data-img3="tela_encosto3.jpg" data-img4="tela_encosto4.jpg" data-itens="1 tela de encosto 9' com leitor de DVD/CD/USB e SD, acessórios e plugues de instalação, fonte para tomada veicular, controle para videogame, controle remoto,  " data-conteudo="Vai levar a criançada em uma viagem longa? Já sabe que elas vão se entediar né? Que tal levar uma tela encosto de 9'?" data-preco="25.90">
+                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Tela de Encosto 9' Motor One" data-img1="tela_encosto1.jpg" data-img2="tela_encosto2.jpg" data-img3="tela_encosto3.jpg" data-img4="tela_encosto4.jpg" data-itens="1 tela de encosto 9' com leitor de DVD/CD/USB e SD, acessórios e plugues de instalação, fonte para tomada veicular, controle para videogame, controle remoto." data-conteudo="Vai levar a criançada em uma viagem longa? Já sabe que elas vão se entediar né? Que tal levar uma tela encosto de 9'?" data-preco="25.90">
                                              <img src="assets/images/produtos/tela_encosto1.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div> 
@@ -623,10 +665,15 @@
                                         </a>
                                     </div> 
                                     <div class="col-md-3" style="margin-bottom:10px;">
-                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Bateria para Drone Phantom 3" data-img1="bateriadrone1.jpg" data-img2="bateriadrone2.jpg" data-img3="bateriadrone3.jpg" data-img4="bateriadrone4.jpg" data-itens="Bateria para Drone DJI Phantom 3: Standard, SE, Advanced, Professional e 4K"  data-conteudo="Está precisando voar com mais autonomia? Que tal uma bateria extra para seu Drone Phantom 3? Tá na mão." data-preco="49.90">
+                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Bateria para Drone Phantom 3" data-img1="bateriadrone1.jpg" data-img2="bateriadrone2.jpg" data-img3="bateriadrone3.jpg" data-img4="bateriadrone4.jpg" data-itens="bateria para Drone DJI Phantom 3: Standard, SE, Advanced, Professional e 4K"  data-conteudo="Está precisando voar com mais autonomia? Que tal uma bateria extra para seu Drone Phantom 3? Tá na mão." data-preco="49.90">
                                              <img src="assets/images/produtos/bateriadrone1.jpg" alt="Image" style="max-width:100%;">
                                         </a>
-                                    </div>                                                                     
+                                    </div>  
+                                    <div class="col-md-3" style="margin-bottom:10px;">
+                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Kit de Iluminação Softbox" data-img1="softbox1.jpg" data-img2="softbox2.jpg" data-img3="softbox3.jpg" data-img4="softbox4.jpg" data-itens="2 bocal quádruplo, 2 softbox 50x70cm, 2 tripés, 8 lâmpadas incandescentes e bolsa de transporte"  data-conteudo="Está pensando em fazer uma fotos ou dar um talento na sua gravação? Tá na mão." data-preco="40.90">
+                                             <img src="assets/images/produtos/softbox1.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>                                                                    
                                 </div>
                                 <!--.row-->
                             </div>
@@ -668,14 +715,16 @@
                             <li data-target="#blogCarousel2" data-slide-to="2">
                             </li>
                             <li data-target="#blogCarousel2" data-slide-to="3">
-                            </li>                            
+                            </li>    
+                            <li data-target="#blogCarousel2" data-slide-to="4">
+                            </li>                         
                         </ol>
                         <!-- Carousel items -->
                         <div class="carousel-inner">
                            <div class="carousel-item active">
                                 <div class="row">
                                     <div class="col-md-3" style="margin-bottom:10px;">
-                                       <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Roçadeira Husqvarna 323R" data-img1="rocadeira1.jpg" data-img2="rocadeira2.jpg" data-img3="rocadeira3.jpg" data-img4="rocadeira4.jpg" data-itens="roçadeira Husqvarna 323R, cinto duplo Stihl, 2m de fio de nylon, 5l de gasolina preparada, rastelo, funil." data-conteudo="Não precisa mais se preocupar com a disponibilidade do jardineiro, e muito menos em gastar uma nota preta com uma dessas. Agora você pode alugar e pagar só pela graminha que cortou. De quebra ainda leva cinto de segurança e todos os acessórios necessários." data-preco="27.90">
+                                       <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Roçadeira Husqvarna 323R" data-img1="rocadeira1.jpg" data-img2="rocadeira2.jpg" data-img3="rocadeira3.jpg" data-img4="rocadeira4.jpg" data-itens="roçadeira Husqvarna 323R, cinto duplo Stihl, 2m de fio de nylon, 5l de gasolina preparada, rastelo, funil." data-conteudo="Não precisa mais se preocupar com a disponibilidade do jardineiro, e muito menos em gastar uma nota preta com uma dessas. Agora você pode alugar e pagar só pela graminha que cortou. De quebra ainda leva cinto de segurança e todos os acessórios necessários." data-preco="30.90">
                                            <img src="assets/images/produtos/rocadeira1.jpg" alt="Image" style="max-width:100%;">
                                       </a>
                                     </div>
@@ -707,7 +756,7 @@
                                         </a>
                                     </div>
                                     <div class="col-md-3" style="margin-bottom:10px;">
-                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Chave hexagonal 10 peças" data-img1="chave_hexagonal1.jpg" data-img2="chave_hexagonal2.jpg" data-img3="chave_hexagonal3.jpg" data-img4="chave_hexagonal4.jpg" data-itens="12 chaves hexagonais." data-conteudo="Com esse conjunto de chaves, não tem parafuso que resista." data-preco="12.90">
+                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Chave hexagonal 12 peças" data-img1="chave_hexagonal1.jpg" data-img2="chave_hexagonal2.jpg" data-img3="chave_hexagonal3.jpg" data-img4="chave_hexagonal4.jpg" data-itens="12 chaves hexagonais." data-conteudo="Com esse conjunto de chaves, não tem parafuso que resista." data-preco="12.90">
                                              <img src="assets/images/produtos/chave_hexagonal1.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
@@ -765,7 +814,7 @@
                                         </a>                                       
                                     </div>
                                     <div class="col-md-3" style="margin-bottom:10px;">
-                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Martelo com cabo de fibra" data-img1="martelo1.jpg" data-img2="martelo2.jpg" data-img3="martelo3.jpg" data-img4="martelo4.jpg" data-itens="martelho de unha."  data-conteudo="Quer coisa pior do que ter que fazer um serviço doméstico e ter que improvisar alguma ferramenta? Não precisa mais disso. Agora você não precisa ter todas as ferramentas, basta conhecer quem tenha." data-preco="12.90">
+                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Martelo com cabo de fibra" data-img1="martelo1.jpg" data-img2="martelo2.jpg" data-img3="martelo3.jpg" data-img4="martelo4.jpg" data-itens="martelo com cabo de fibra."  data-conteudo="Quer coisa pior do que ter que fazer um serviço doméstico e ter que improvisar alguma ferramenta? Não precisa mais disso. Agora você não precisa ter todas as ferramentas, basta conhecer quem tenha." data-preco="12.90">
                                              <img src="assets/images/produtos/martelo1.jpg" alt="Image" style="max-width:100%;">
                                         </a>                                       
                                     </div>  
@@ -774,6 +823,17 @@
                                              <img src="assets/images/produtos/serrote_arco1.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>                                       
+                                </div>
+                                <!--.row-->
+                            </div>
+
+                            <div class="carousel-item">                             
+                                <div class="row">
+                                     <div class="col-md-3" style="margin-bottom:10px;">
+                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Kit Jardim" data-img1="kit_jardim1.jpg" data-img2="kit_jardim2.jpg" data-img3="kit_jardim3.jpg" data-img4="kit_jardim4.jpg" data-itens="ancinho, pá, garfo, enxada, pulverizador de compressão, pulverizador costal de 20 Litros e 3 tesouras de poda." data-conteudo="Quer fazer um jardim e está sem ferramenta? Aqui você leva um kit de jardim com: pazinha, ancinho, garfo, enchada e luvas pigmentadas e só paga pelo tempo que usar." data-preco="27.90">
+                                            <img src="assets/images/produtos/kit_jardim1.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>                                                                        
                                 </div>
                                 <!--.row-->
                             </div>
@@ -815,6 +875,8 @@
                             <li data-target="#blogCarousel3" data-slide-to="2">
                             </li> 
                             <li data-target="#blogCarousel3" data-slide-to="3">
+                            </li>
+                            <li data-target="#blogCarousel3" data-slide-to="4">
                             </li>                           
                         </ol>
                         <!-- Carousel items -->
@@ -832,8 +894,8 @@
                                         </a>
                                     </div>
                                     <div class="col-md-3" style="margin-bottom:10px;">
-                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Suporte para bike s/ engate" data-img1="suporte_bike_sem_engate1.jpg" data-img2="suporte_bike_sem_engate2.jpg" data-img3="suporte_bike_sem_engate3.jpg" data-img4="suporte_bike_sem_engate4.jpg" data-itens="suporte para 2 bikes, 4 fitas para fixação no veículo, 2 cordas elásticas." data-conteudo="Precisa carregar as bikes, mas não tem engate no carro? Relaxa que temos a solução. Com esse transbike, vai poder carregar até 2 bicicletas, sem que seu carro tenha engate." data-preco="15.90">
-                                             <img src="assets/images/produtos/suporte_bike_sem_engate1.jpg" alt="Image" style="max-width:100%;">
+                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Tenda Gazebo" data-img1="tenda1.jpg" data-img2="tenda2.jpg" data-img3="tenda3.jpg" data-img4="tenda4.jpg" data-itens="Tenda Gazebo, Hastes de montagem e bolsa de transporte." data-conteudo="Não tem por que você comprar uma tenda dessa não é verdade? Além de usar poucas vezes, ocupa um espaço tremeno na sua dispensa. Aqui no Alug, tudo isso se resolve." data-preco="29.90">
+                                             <img src="assets/images/produtos/tenda1.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
                                     <div class="col-md-3" style="margin-bottom:10px;">
@@ -864,8 +926,8 @@
                                         </a>
                                     </div>
                                     <div class="col-md-3" style="margin-bottom:10px;">
-                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Kit Jardim" data-img1="kit_jardim1.jpg" data-img2="kit_jardim2.jpg" data-img3="kit_jardim3.jpg" data-img4="kit_jardim4.jpg" data-itens="ancinho, pá, garfo, enchada, par de luvas." data-conteudo="Quer fazer um jardim e está sem ferramenta? Aqui você leva um kit de jardim com: pazinha, ancinho, garfo, enchada e luvas pigmentadas e só paga pelo tempo que usar." data-preco="14.90">
-                                            <img src="assets/images/produtos/kit_jardim1.jpg" alt="Image" style="max-width:100%;">
+                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Imagem & Ação 2" data-img1="imagemeacao1.jpg" data-img2="imagemeacao2.jpg" data-img3="imagemeacao3.jpg" data-img4="imagemeacao4.jpg" data-itens="jogo de tabuleiro imagem & ação 2, ampulheta, 4 peões e 198 cartas." data-conteudo="Precisa de um motivo para se reunir com os amigos no final de semana? Pronto, tá na mão. São 2.400 palavras ou expressões novas, divididas em 6 categorias para você e seus amigos passarem ótimos momentos juntos." data-preco="15.90">
+                                            <img src="assets/images/produtos/imagemeacao1.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
                                 </div>
@@ -910,6 +972,11 @@
                                              <img src="assets/images/produtos/suporte_bike_com_engate1.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>  
+                                     <div class="col-md-3" style="margin-bottom:10px;">
+                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Suporte de bike para veículo sem engate" data-img1="suporte_bike_sem_engate1.jpg" data-img2="suporte_bike_sem_engate2.jpg" data-img3="suporte_bike_sem_engate3.jpg" data-img4="suporte_bike_sem_engate4.jpg" data-itens="suporte para 2 bikes, 4 fitas para fixação no veículo, 2 cordas elásticas." data-conteudo="Precisa carregar as bikes, mas não tem engate no carro? Relaxa que temos a solução. Com esse transbike, vai poder carregar até 2 bicicletas, sem que seu carro tenha engate." data-preco="15.90">
+                                             <img src="assets/images/produtos/suporte_bike_sem_engate1.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
                                     <div class="col-md-3" style="margin-bottom:10px;">
                                         <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Fogareiro à Gás + Panela" data-img1="fogareiro1.jpg" data-img2="fogareiro2.jpg" data-img3="fogareiro3.jpg" data-img4="fogareiro4.jpg" data-itens="fogareiro, tripé, panela revestida de cerâmica, mangueira para gás."  data-conteudo="Quantas vezes deixamos as frituras de lado por conta da sujeira que faz em casa? Agora não precisa mais. Com um fogareiro à gás, vai poder carregar a bagunça para fora de casa." data-preco="21.90">
                                              <img src="assets/images/produtos/fogareiro1.jpg" alt="Image" style="max-width:100%;">
@@ -920,6 +987,17 @@
                                              <img src="assets/images/produtos/aspirador1.jpg" alt="Image" style="max-width:100%;">
                                         </a>                                       
                                     </div>                                                                                                    
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->  
+                            <div class="carousel-item">                              
+                                <div class="row">
+                                    <div class="col-md-3" style="margin-bottom:10px;">
+                                        <a href="#" data-toggle="modal" data-target="#modal_prod" data-nome="Chopeira Residencial 2 garrafas" data-img1="chopeira1.jpg" data-img2="chopeira2.jpg" data-img3="chopeira3.jpg" data-img4="chopeira4.jpg" data-itens="Chopeira residencial rústica." data-conteudo="Se antes parecia algo tão distante, agora não mais. Você definitivamente pode ter uma chopeira para você sem precisar comprar uma. Com uma chopeira residencial, suas garrafas de 600ml ou 1 litro virão chopp em um piscar de olhos." data-preco="28.90">
+                                             <img src="assets/images/produtos/chopeira1.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>                                                                                                                                    
                                 </div>
                                 <!--.row-->
                             </div>
